@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter the server URL : "
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text=""
+                android:inputType="textCapSentences"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/serverName"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select the fields to be saved :"
+                android:textSize="20dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nearable ID"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/idC"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Is it in motion"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/motionC"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last motion state duration"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/lastC"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current motion state duration"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/currentC"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acceleration (x,y,z)"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/accelerationC"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Temperature"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/temperatureC"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Battery level"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/batteryC"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Color"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/colorC"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/typeC"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SAVE"
+                android:textSize="20dp"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                android:id="@+id/saveButton"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
